@@ -1,0 +1,2868 @@
+<Structure>
+<RigidBody>
+<Name>Carapace</Name>
+<ID>c26fd41b-5c58-441b-bf87-459e4ae481c2</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>0.3</Cd>
+<Cdr>0.3</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>thorax_flipped.bmp</Texture>
+<Density Value="1.2" Scale="None" Actual="1.2"/>
+<XCenterOfMass Value="0.213" Scale="centi" Actual="0.00213"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Freeze>True</Freeze>
+<ChildBodies>
+<RigidBody>
+<Name>Coxopodite</Name>
+<ID>017cfb6e-9ba6-4600-ba31-d8344625ec0d</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>Crayfish Body Parts\5 leg\5 leg FLIPPED.bmp</Texture>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>TC_joint</Name>
+<ID>b2edd26c-6ab2-4dc0-b893-3a4aa14fb2ea</ID>
+<Type>Hinge</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Hinge</PartType>
+<Description/>
+<Constraint Low="-0.349066" High="-0.174533">
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<EnableMotor>True</EnableMotor>
+<ServoMotor>False</ServoMotor>
+<ServoGain>100</ServoGain>
+<MaxTorque Value="100" Scale="None" Actual="100"/>
+<MaxVelocity Value="100" Scale="None" Actual="100"/>
+<RotationAxis x="0.759717" y="-0.639629" z="-0.117191"/>
+<Radius>0.05</Radius>
+<RelativePosition x="0.16333" y="0.154907" z="0.0434663"/>
+<Rotation x="-1.6983" y="-0.398618" z="-0.821286"/>
+<OrientationMatrix>0.004066651,-0.9999917,0,0,-4.371103E-08,-1.777589E-10,1,0,-0.9999917,-0.004066651,-4.371139E-08,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000007,-7.007873E-08,-1.087794E-06,0,-1.014101E-06,1.000005,9.941953E-07,0,-9.797584E-07,4.398162E-07,1.00001,0,-0.019,-0.224,-0.045,0.9999926</TranslationMatrix>
+</Joint>
+<ChildBodies>
+<RigidBody>
+<Name>CL_Phasic</Name>
+<ID>07ded226-3cad-4002-a7a5-a81e0d0247f3</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.752941" Green="0.752941" Blue="1" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>da92f953-34eb-4cf0-9163-fea1ea61df5e</AttachID>
+<AttachID>be97510b-4044-4bac-be0f-de441cbf03ae</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>e036c9d5-8394-4ca3-91a2-c1cc34d24317</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="2.55" Scale="None" Actual="2.55"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="2.55" Scale="None" Actual="2.55"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-28.017" Scale="milli" Actual="-0.028017"/>
+</StimulusTension>
+<LengthTension>
+<ID>ecced792-b89a-4769-99a4-27f89fad48b0</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="1.2" Scale="milli" Actual="0.0012"/>
+<UpperLimitScale Value="4.4" Scale="milli" Actual="0.0044"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.28" Scale="centi" Actual="0.0028"/>
+<Lwidth Value="0.16" Scale="centi" Actual="0.0016"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="261.5" Scale="None" Actual="261.5"/>
+<Kpe Value="26" Scale="None" Actual="26"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CDcx_Tonic</Name>
+<ID>18ce8858-4e89-4413-bc37-4f9a67adf22c</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0.501961" Blue="0.501961" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>5e971f49-5e61-4f49-ba74-c47777c23680</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>7659dbc8-31a2-44ef-a2a3-a8e4004ab896</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="4.97" Scale="None" Actual="4.97"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="4.97" Scale="None" Actual="4.97"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-54.605" Scale="milli" Actual="-0.054605"/>
+</StimulusTension>
+<LengthTension>
+<ID>958b214a-9d56-4d07-9bf7-505c075b1c2c</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2" Scale="milli" Actual="0.002"/>
+<UpperLimitScale Value="8" Scale="milli" Actual="0.008"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.5" Scale="centi" Actual="0.005"/>
+<Lwidth Value="0.3" Scale="centi" Actual="0.003"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="101.9" Scale="None" Actual="101.9"/>
+<Kpe Value="10.2" Scale="None" Actual="10.2"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>RLd_Phasic</Name>
+<ID>1cd6a46f-e2f0-4d4d-b61b-562fdeb56a56</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.501961" Green="0.501961" Blue="1" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>8a3360df-cb1d-4531-9644-d0471a59ee36</AttachID>
+<AttachID>cdf21239-78d9-4261-86d8-ca363c95a9b8</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>70d857b1-a4c1-42af-9e28-5d3eb12ec9fe</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="4.7" Scale="None" Actual="4.7"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="4.7" Scale="None" Actual="4.7"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-51.639" Scale="milli" Actual="-0.051639"/>
+</StimulusTension>
+<LengthTension>
+<ID>abc3a2e2-dfb7-411a-a35a-2478b187bd3c</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.2" Scale="milli" Actual="0.0022"/>
+<UpperLimitScale Value="7.8" Scale="milli" Actual="0.0078"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.5" Scale="centi" Actual="0.005"/>
+<Lwidth Value="0.28" Scale="centi" Actual="0.0028"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="588" Scale="None" Actual="588"/>
+<Kpe Value="59" Scale="None" Actual="59"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CDcx_Origin</Name>
+<ID>5e971f49-5e61-4f49-ba74-c47777c23680</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.0583173" y="-0.25926" z="-0.0999962"/>
+<LocalPosition x="0.0583195" y="-0.259269" z="-0.1"/>
+<Rotation x="1.40572" y="0.625264" z="-1.54848"/>
+<LocalRotation x="-1.10736" y="0.991382" z="-0.645175"/>
+<Direction x="0.1954" y="-0.97016" z="0.14352"/>
+<Color Red="1" Green="0.501961" Blue="0.501961" Alpha="1"/>
+<OrientationMatrix>0.4374769,-0.3292531,-0.8367833,0,-0.3292533,0.8072831,-0.4897818,0,0.8367832,0.489782,0.24476,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000043,-5.802332E-06,2.242783E-06,0,-1.168299E-05,1.000043,-1.08485E-05,0,-2.659922E-06,-1.084848E-05,1.000043,0,0.05831952,-0.2592694,-0.09999999,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.01809315,0.8106096,-0.5853117,0,-0.1771807,-0.5735501,-0.7998031,0,-0.9840069,0.118188,0.1332428,0,-0.3186343,-0.3354667,-2.622972,0.9999627</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CDc_Phasic</Name>
+<ID>70c6fd45-667c-4067-9eb7-3e946432a35e</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0.501961" Blue="0.501961" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>1751287a-c7fe-4419-b416-a9fb1ad3a54a</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>feaed282-d007-415b-b151-462391287088</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="8.7" Scale="None" Actual="8.7"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="8.78" Scale="None" Actual="8.78"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-96.465" Scale="milli" Actual="-0.096465"/>
+</StimulusTension>
+<LengthTension>
+<ID>faa9f5e3-9fca-4a08-95c3-09d6a45cefc7</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="3" Scale="milli" Actual="0.003"/>
+<UpperLimitScale Value="11" Scale="milli" Actual="0.011"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.7" Scale="centi" Actual="0.007"/>
+<Lwidth Value="0.4" Scale="centi" Actual="0.004"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="900.6" Scale="None" Actual="900.6"/>
+<Kpe Value="90.1" Scale="None" Actual="90.1"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="91" Scale="None" Actual="91"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>RLd_origin</Name>
+<ID>8a3360df-cb1d-4531-9644-d0471a59ee36</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.184155" y="-0.160301" z="0.00671605"/>
+<LocalPosition x="0.184157" y="-0.160295" z="0.00674959"/>
+<Rotation x="1.85607" y="0.462846" z="-1.3354"/>
+<LocalRotation x="-1.73392" y="0.869598" z="-1.00128"/>
+<Direction x="0.2713" y="-0.87279" z="-0.40574"/>
+<Color Red="0.501961" Green="0.501961" Blue="1" Alpha="1"/>
+<OrientationMatrix>0.3478744,-0.5433055,-0.7640697,0,-0.5433059,0.5473555,-0.6365694,0,0.7640694,0.6365699,-0.1047701,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000028,-1.212279E-05,-1.650309E-06,0,-9.332101E-06,1.000021,-3.665789E-06,0,-1.769418E-07,-5.27513E-06,1.000028,0,0.1841568,-0.1602946,0.00674959,1.000013</TranslationMatrix>
+<CombinedTransformationMatrix>0.2086882,0.8700975,-0.446496,0,0.1737241,-0.4822783,-0.8586166,0,-0.9624043,0.1016279,-0.2518055,0,-0.4944224,-0.3604873,-2.548853,0.9999757</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CDcx_Phasic</Name>
+<ID>8a428047-52e6-4d99-907f-3cd51c3b9ef8</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>5e971f49-5e61-4f49-ba74-c47777c23680</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>0e5c19ed-6f32-4334-a47f-732b9eefcba5</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="8.78" Scale="None" Actual="8.78"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="8.78" Scale="None" Actual="8.78"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-96.465" Scale="milli" Actual="-0.096465"/>
+</StimulusTension>
+<LengthTension>
+<ID>6e6da380-3fc1-4422-a150-55d7a393bf95</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2" Scale="milli" Actual="0.002"/>
+<UpperLimitScale Value="8" Scale="milli" Actual="0.008"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.5" Scale="centi" Actual="0.005"/>
+<Lwidth Value="0.3" Scale="centi" Actual="0.003"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="900.6" Scale="None" Actual="900.6"/>
+<Kpe Value="90.1" Scale="None" Actual="90.1"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CDd_Tonic</Name>
+<ID>a158b676-1b91-42d5-92e5-314141587fa9</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>9bc27e52-eaec-43aa-b21d-69fdcaffd92c</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>c3130598-5ebf-41b1-b30e-999cab218c7b</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.91" Scale="None" Actual="0.91"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.91" Scale="None" Actual="0.91"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-9.998" Scale="milli" Actual="-0.009998"/>
+</StimulusTension>
+<LengthTension>
+<ID>427b21eb-4a5e-4ff5-9ed3-455c7e1f0aee</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="4" Scale="milli" Actual="0.004"/>
+<UpperLimitScale Value="14" Scale="milli" Actual="0.014"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.9" Scale="centi" Actual="0.009"/>
+<Lwidth Value="0.5" Scale="centi" Actual="0.005"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="19" Scale="None" Actual="19"/>
+<Kpe Value="1.9" Scale="None" Actual="1.9"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>Basipodite</Name>
+<ID>b39ceb7c-84f3-4ff7-871b-ce42e80b527b</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>Crayfish Body Parts\5 leg\5 leg FLIPPED.bmp</Texture>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>CB_joint</Name>
+<ID>74c44547-5eec-4102-960f-96fcb71f2f65</ID>
+<Type>Hinge</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Hinge</PartType>
+<Description/>
+<Constraint Low="-1.5708" High="0.698132">
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<EnableMotor>False</EnableMotor>
+<ServoMotor>True</ServoMotor>
+<ServoGain>200</ServoGain>
+<MaxTorque Value="100" Scale="None" Actual="100"/>
+<MaxVelocity Value="100" Scale="None" Actual="100"/>
+<RotationAxis x="-0.0864213" y="-0.332168" z="0.93927"/>
+<Radius>0.07</Radius>
+<RelativePosition x="0.0883393" y="0.0398448" z="0.000989914"/>
+<Rotation x="-0.279288" y="0.214353" z="0.892706"/>
+<OrientationMatrix>-0.4295068,-0.557223,0.7106521,0,0.2241004,-0.8280861,-0.5138603,0,0.8748159,-0.06144911,0.4805425,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000006,9.01525E-07,1.490129E-07,0,5.96048E-07,1.000003,-1.160431E-06,0,4.470375E-08,-1.564629E-07,1.000003,0,-0.007,-0.088,-0.04,1.000001</TranslationMatrix>
+</Joint>
+<ChildBodies>
+<RigidBody>
+<Name>Ischiopodite</Name>
+<ID>18b4a900-fb98-41bd-b48b-9bf50e95f7f8</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>Crayfish Body Parts\5 leg\5 leg FLIPPED.bmp</Texture>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>BI_joint</Name>
+<ID>de404daf-9f8c-4bd7-8712-658e1b4bd1ca</ID>
+<Type>Hinge</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Hinge</PartType>
+<Description/>
+<Constraint Low="-0.0872665" High="0.0872665">
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<EnableMotor>True</EnableMotor>
+<ServoMotor>False</ServoMotor>
+<ServoGain>100</ServoGain>
+<MaxTorque Value="100" Scale="None" Actual="100"/>
+<MaxVelocity Value="100" Scale="None" Actual="100"/>
+<RotationAxis x="-0.200679" y="-0.962513" z="0.182922"/>
+<Radius>0.05</Radius>
+<RelativePosition x="0.230177" y="-0.0179588" z="0.0689631"/>
+<Rotation x="-1.38035" y="-0.260563" z="0.155922"/>
+<OrientationMatrix>-0.1694505,-0.9854968,0.008434367,0,0.5137439,-0.08102555,0.8541048,0,-0.841038,0.1490633,0.5200248,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000082,-1.025241E-05,0,0,-7.689314E-06,1,0,0,-1.025261E-05,5.240106E-11,1.000041,0,-0.02154713,-0.2399783,0.002618468,1</TranslationMatrix>
+</Joint>
+<ChildBodies>
+<RigidBody>
+<Name>B-I Remoter Insertion</Name>
+<ID>118d3143-8ec7-4f4a-91bd-e5133296399b</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.0479979" y="-0.206991" z="-0.0759966"/>
+<LocalPosition x="-0.048" y="-0.207" z="-0.076"/>
+<Rotation x="2.82125" y="-0.0674458" z="1.48005"/>
+<LocalRotation x="3.12415" y="-0.348977" z="-3.04272"/>
+<Direction x="-0.34193" y="-0.01639" z="-0.93958"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.9351338,-0.09275818,0.3419368,0,-0.09275815,0.9955537,0.01639039,0,-0.3419369,-0.01639022,-0.93958,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.048,-0.207,-0.076,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.09041313,-0.993587,0.06739464,0,-0.9432946,-0.1071441,-0.3141652,0,0.3193844,-0.03517592,-0.9469468,0,-0.7256003,-0.9117714,-2.799845,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Merus Reductor</Name>
+<ID>2730b2a7-18ba-4385-8fae-00ff496741dd</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0.501961" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>893be375-14f3-4c27-9638-3934e749dc1b</AttachID>
+<AttachID>81568d46-8801-45c4-9f5d-5e57c873a514</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>ef5e903a-6eca-438a-8183-5f70332a672b</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.495" Scale="None" Actual="0.495"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>4a61c0af-ccb5-4c19-b9fa-ba98c76804b3</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2" Scale="milli" Actual="0.002"/>
+<UpperLimitScale Value="6.2" Scale="milli" Actual="0.0062"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.41" Scale="centi" Actual="0.0041"/>
+<Lwidth Value="0.21" Scale="centi" Actual="0.0021"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>Meropodite</Name>
+<ID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>Crayfish Body Parts\5 leg\5 leg FLIPPED.bmp</Texture>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>IM_joint</Name>
+<ID>a8551bf3-5b7c-41aa-9f24-721707c3e08a</ID>
+<Type>Hinge</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Hinge</PartType>
+<Description/>
+<Constraint Low="-0.0872665" High="0.0872665">
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<EnableMotor>True</EnableMotor>
+<ServoMotor>False</ServoMotor>
+<ServoGain>100</ServoGain>
+<MaxTorque Value="100" Scale="None" Actual="100"/>
+<MaxVelocity Value="100" Scale="None" Actual="100"/>
+<RotationAxis x="-0.293269" y="-0.865435" z="0.40641"/>
+<Radius>0.05</Radius>
+<RelativePosition x="0.735306" y="-0.0453544" z="0.148337"/>
+<Rotation x="-1.14091" y="-0.223792" z="0.225312"/>
+<OrientationMatrix>-0.01490025,-0.9757594,0.2183324,0,0.9979321,-0.02816286,-0.05775993,0,0.06250881,0.2170204,0.974162,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999985,-3.725287E-07,3.203741E-07,0,-1.862643E-07,1,1.011414E-06,0,-1.862643E-07,-2.197921E-07,0.9999989,0,0.01650333,-0.7498326,0.04682115,0.9999985</TranslationMatrix>
+</Joint>
+<ChildBodies>
+<RigidBody>
+<Name>Carpus Extensor</Name>
+<ID>0c5650e2-2db7-4d34-af18-99b093061821</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="1" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>ef3eddca-be92-4fff-a85e-9dd556597217</AttachID>
+<AttachID>4e028281-798c-421d-b229-06505407b229</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>96c940f4-380c-41f1-8b95-e741228b3953</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="milli" Actual="0"/>
+<UpperOutputScale Value="0.5" Scale="None" Actual="0.5"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>2febbdcd-fd27-4862-8c38-6117a6e63196</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="7" Scale="milli" Actual="0.007"/>
+<UpperLimitScale Value="25" Scale="milli" Actual="0.025"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="1.6" Scale="centi" Actual="0.016"/>
+<Lwidth Value="0.9" Scale="centi" Actual="0.009"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>Carpus Flexor</Name>
+<ID>2b719755-e780-49bf-b3e3-12b4813d6994</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="1" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>d31e3b7e-0a46-4a72-b412-35c43448865d</AttachID>
+<AttachID>003a4b38-930c-4c54-aeee-ccae8aef7241</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>a198f85c-6af1-4807-bb28-bb40bda95f24</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.5" Scale="None" Actual="0.5"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>c6dd57ac-091d-428a-b948-6b7100167693</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="8" Scale="milli" Actual="0.008"/>
+<UpperLimitScale Value="26" Scale="milli" Actual="0.026"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="1.7" Scale="centi" Actual="0.017"/>
+<Lwidth Value="0.9" Scale="centi" Actual="0.009"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>Carpopodite</Name>
+<ID>46a57877-bc28-4419-b45d-0b029875d9da</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>Crayfish Body Parts\5 leg\5 leg FLIPPED.bmp</Texture>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>MC_joint</Name>
+<ID>f7d25916-d81a-49e6-8f81-e7a3617dc759</ID>
+<Type>Hinge</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Hinge</PartType>
+<Description/>
+<Constraint Low="-1.0472" High="0.523599">
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<EnableMotor>True</EnableMotor>
+<ServoMotor>False</ServoMotor>
+<ServoGain>100</ServoGain>
+<MaxTorque Value="100" Scale="None" Actual="100"/>
+<MaxVelocity Value="100" Scale="None" Actual="100"/>
+<RotationAxis x="-0.294012" y="0.180546" z="0.938698"/>
+<Radius>0.05</Radius>
+<RelativePosition x="0.254915" y="0.247971" z="0.046458"/>
+<Rotation x="0.334329" y="-0.113064" z="-0.70607"/>
+<OrientationMatrix>-0.1028193,-0.9922523,0.06973906,0,0.243165,-0.09305686,-0.9655109,0,0.9645201,-0.08231508,0.2508491,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999936,-2.875896E-06,1.132489E-06,0,3.017487E-07,0.9999903,-4.133185E-06,0,-1.639116E-06,3.278218E-06,0.9999936,0,-0.019,-0.358,0.009000001,0.9999893</TranslationMatrix>
+</Joint>
+<ChildBodies>
+<RigidBody>
+<Name>Carpus Flexor Insertion</Name>
+<ID>003a4b38-930c-4c54-aeee-ccae8aef7241</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.00974212" y="-0.242174" z="0.0795552"/>
+<LocalPosition x="0.00974325" y="-0.242203" z="0.0795646"/>
+<Rotation x="2.91773" y="-0.0665865" z="0.629185"/>
+<LocalRotation x="3.00954" y="-1.00425" z="-2.90189"/>
+<Direction x="-0.84376" y="-0.07067" z="-0.53205"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.5213775,-0.1274246,0.8437585,0,-0.1274246,0.9893274,0.07066984,0,-0.8437585,-0.07066993,-0.5320501,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.009743252,-0.2422027,0.07956456,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.8067015,-0.5871719,0.06653726,0,-0.5618491,-0.7970349,-0.2215066,0,0.1830735,0.1413245,-0.9728687,0,-2.589192,-0.9309027,-3.040345,0.9998817</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Propodite Bender</Name>
+<ID>008c9601-907f-4f79-9b94-4057522cce8b</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0" Green="1" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>a3e60e14-3d00-4ca6-8d94-c50903bdef1f</AttachID>
+<AttachID>634535d8-b952-46e5-8f86-d98ec600fd4e</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>9363c904-669a-4a66-a2af-8310f5ceca9d</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-100" Scale="milli" Actual="-0.1"/>
+<UpperLimitScale Value="0" Scale="milli" Actual="0"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="6" Scale="None" Actual="6"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="5" Scale="None" Actual="5"/>
+<A3 Value="100" Scale="None" Actual="100"/>
+<A4 Value="0" Scale="None" Actual="0"/>
+</StimulusTension>
+<LengthTension>
+<ID>2d1ad25c-e743-40c2-be0a-3b35010336a0</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="4" Scale="milli" Actual="0.004"/>
+<UpperLimitScale Value="12" Scale="milli" Actual="0.012"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.8" Scale="centi" Actual="0.008"/>
+<Lwidth Value="0.4" Scale="centi" Actual="0.004"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>Propodite Stretcher Origin</Name>
+<ID>091e0ee6-d3ea-4c5f-9fc0-07380c902079</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.0859898" y="-0.260969" z="-0.0661174"/>
+<LocalPosition x="-0.086" y="-0.261" z="-0.0661253"/>
+<Rotation x="2.98823" y="0.300064" z="0.72034"/>
+<LocalRotation x="-3.13237" y="-0.669224" z="3.11508"/>
+<Direction x="-0.62038" y="0.00723" z="-0.78427"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.7840276,0.02079125,0.6203776,0,0.02079129,0.9997576,-0.007229893,0,-0.6203776,0.007230014,-0.7842699,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.086,-0.261,-0.06612531,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.7179803,-0.6301495,-0.2955814,0,-0.6858189,-0.7129902,-0.1459325,0,-0.1188034,0.3075134,-0.9440876,0,-2.607553,-0.8535768,-3.196642,0.9998817</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Carpus Extensor Insertion</Name>
+<ID>4e028281-798c-421d-b229-06505407b229</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.049994" y="-0.432789" z="-0.0222852"/>
+<LocalPosition x="0.05" y="-0.43284" z="-0.0222878"/>
+<Rotation x="2.88136" y="0.0988866" z="0.551297"/>
+<LocalRotation x="3.02685" y="-0.821905" z="-2.87949"/>
+<Direction x="-0.73244" y="-0.07795" z="-0.67635"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.6575757,-0.1764077,0.7324443,0,-0.1764078,0.9812258,0.07795038,0,-0.7324443,-0.0779506,-0.6763499,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.05,-0.4328401,-0.02228783,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.8476648,-0.5212218,-0.0987255,0,-0.5277892,-0.8098658,-0.2560481,0,0.0534851,0.2691715,-0.9615918,0,-2.536793,-0.7174706,-3.034118,0.9998817</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Propodite Bender Origin</Name>
+<ID>a3e60e14-3d00-4ca6-8d94-c50903bdef1f</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.104988" y="-0.246971" z="-0.0369957"/>
+<LocalPosition x="0.105" y="-0.247" z="-0.037"/>
+<Rotation x="2.91773" y="-0.0665865" z="0.629185"/>
+<LocalRotation x="3.00954" y="-1.00425" z="-2.90189"/>
+<Direction x="-0.84376" y="-0.07067" z="-0.53205"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.5213775,-0.1274246,0.8437585,0,-0.1274246,0.9893274,0.07066984,0,-0.8437585,-0.07066993,-0.5320501,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.105,-0.247,-0.037,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.8067015,-0.5871719,0.06653726,0,-0.5618491,-0.7970349,-0.2215066,0,0.1830735,0.1413245,-0.9728687,0,-2.697288,-0.8268734,-3.027061,0.9998817</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Propopodite</Name>
+<ID>bbb4bbc8-78c8-4df6-a795-53df5eacc0a2</ID>
+<Type>Mesh</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.BodyMesh</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture>Crayfish Body Parts\5 leg\5 leg FLIPPED.bmp</Texture>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>CP_joint</Name>
+<ID>1df47159-b5de-474c-8866-4e50fdd90284</ID>
+<Type>Hinge</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Hinge</PartType>
+<Description/>
+<Constraint Low="-0.785398" High="0.785398">
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<EnableMotor>True</EnableMotor>
+<ServoMotor>False</ServoMotor>
+<ServoGain>100</ServoGain>
+<MaxTorque Value="100" Scale="None" Actual="100"/>
+<MaxVelocity Value="100" Scale="None" Actual="100"/>
+<RotationAxis x="-0.633462" y="0.666123" z="-0.393848"/>
+<Radius>0.05</Radius>
+<RelativePosition x="0.469661" y="0.585234" z="0.147748"/>
+<Rotation x="2.05938" y="-0.575238" z="-1.04177"/>
+<OrientationMatrix>0.3922997,-0.9158466,0.0855602,0,-0.8966756,-0.4015058,-0.1864451,0,0.2051093,-0.003577048,-0.9787297,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999986,1.415581E-07,-2.622594E-06,0,-1.38208E-06,0.9999986,-2.365548E-07,0,-6.854491E-07,5.9418E-07,0.9999948,0,0.01494062,-0.7640558,-0.02894281,0.9999986</TranslationMatrix>
+</Joint>
+<ChildBodies>
+<RigidBody>
+<Name>Body_1</Name>
+<ID>5b869eb9-be9c-4e09-ab59-7f98c8834464</ID>
+<Type>Cylinder</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.Cylinder</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="2" Scale="None" Actual="2"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<Joint>
+<Name>Joint_8</Name>
+<ID>8dadd0a9-0024-494b-a753-a137fa266a00</ID>
+<Type>Static</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.Joints.Static</PartType>
+<Description/>
+<Constraint>
+<EnableLimits>True</EnableLimits>
+<Damping Value="0" Scale="Kilo" Actual="0"/>
+<Restitution Value="0" Scale="None" Actual="0"/>
+<Stiffness Value="5" Scale="Mega" Actual="5e+06"/>
+</Constraint>
+<Radius>0.05</Radius>
+<RelativePosition x="0" y="0" z="0"/>
+<Rotation x="1.98348" y="-1.0047" z="-2.83259"/>
+<OrientationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</TranslationMatrix>
+</Joint>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.562095" y="-0.632164" z="-0.181352"/>
+<LocalPosition x="-0.00365336" y="0.865027" z="-0.010472"/>
+<Rotation x="1.98348" y="-1.0047" z="-2.83259"/>
+<LocalRotation x="-1.53544" y="-0.106179" z="0.0415826"/>
+<Direction x="-0.09163" y="0.99289" z="0.07595"/>
+<Color Red="0.501961" Green="0.25098" Blue="0.25098" Alpha="1"/>
+<OrientationMatrix>0.9935086,0.04133652,0.10598,0,0.1043528,0.03972027,-0.9937467,0,-0.04528771,0.9983554,0.03514881,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000022,-6.817416E-07,5.453879E-06,0,-1.363483E-06,1.000022,-6.817399E-07,0,0,0,1,0,-0.003653357,0.8650273,-0.01047201,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.5109254,0.163103,0.8440006,0,-0.6145532,0.6171869,-0.4913159,0,-0.6010901,-0.7697803,-0.2151131,0,-4.088389,-2.523475,-3.519921,0.9999316</CombinedTransformationMatrix>
+<Radius>0.1</Radius>
+<Height>0.5</Height>
+<CollisionRadius>0.1</CollisionRadius>
+<CollisionHeight>0.5</CollisionHeight>
+</RigidBody>
+<RigidBody>
+<Name>Propodite Bender Insertion</Name>
+<ID>634535d8-b952-46e5-8f86-d98ec600fd4e</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.0957307" y="-0.711893" z="-0.0324396"/>
+<LocalPosition x="0.0957371" y="-0.711942" z="-0.0324417"/>
+<Rotation x="2.67336" y="0.131659" z="0.206351"/>
+<LocalRotation x="2.95454" y="-0.608045" z="-2.56059"/>
+<Direction x="-0.57126" y="-0.15263" z="-0.80645"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.6860871,-0.4504911,0.5712637,0,-0.4504913,0.8796371,0.1526309,0,-0.5712636,-0.1526312,-0.80645,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.0957371,-0.7119416,-0.03244166,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.9703,-0.2031132,-0.1312791,0,-0.2408892,-0.861326,-0.4473924,0,-0.0222021,0.4657483,-0.8846313,0,-3.136153,-1.321208,-3.138819,0.9999316</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Propodite Stretcher Insertion</Name>
+<ID>d24fc282-5b21-44a3-8a2a-b70a1faf318c</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.0620609" y="-0.729685" z="-0.0123401"/>
+<LocalPosition x="-0.0620652" y="-0.729735" z="-0.0123408"/>
+<Rotation x="2.95476" y="0.174114" z="0.713529"/>
+<LocalRotation x="-3.12491" y="-0.777614" z="3.10087"/>
+<Direction x="-0.70158" y="0.01189" z="-0.71249"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.7119983,0.02901398,0.7015815,0,0.02901401,0.9995083,-0.01188996,0,-0.7015814,0.01189006,-0.71249,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.06206517,-0.7297347,-0.01234077,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.7446085,-0.6445959,-0.1732357,0,-0.6674652,-0.7218885,-0.1829379,0,-0.007151306,0.251857,-0.967724,0,-3.027978,-1.36185,-3.249575,0.9999316</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.736102" y="-0.8322" z="-0.207406"/>
+<LocalPosition x="-0.0382734" y="1.12941" z="0.00599726"/>
+<Rotation x="0.336417" y="-0.922267" z="-2.69416"/>
+<LocalRotation x="0" y="0.0149998" z="0.05"/>
+<Direction x="0.64775" y="0.76096" z="0.03677"/>
+<Color Red="0.509804" Green="0.509804" Blue="0.509804" Alpha="1"/>
+<OrientationMatrix>0.9986371,0.04997351,-0.01499928,0,-0.04997915,0.9987499,0,0,0.01498054,0.000749652,0.9998869,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,-7.879434E-07,-1.260638E-05,0,2.560717E-06,1.00005,-3.742628E-06,0,1.260638E-05,4.038083E-06,1,0,-0.03827345,1.129407,0.005997257,1.00005</TranslationMatrix>
+<CombinedTransformationMatrix>-0.5445086,0.2613081,0.7969729,0,-0.6456179,-0.7372413,-0.1993805,0,0.5354349,-0.6230989,0.5701299,0,-3.526295,-1.891312,-3.33857,0.9999316</CombinedTransformationMatrix>
+<CollisionBoxSize x="0.290743" y="1.57113" z="0.222214"/>
+<GraphicsBoxSize x="0.290743" y="1.57113" z="0.222214"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>Crayfish Body Parts\5 leg\propodite5_left.obj</MeshFile>
+<CollisionMeshFile>Crayfish Body Parts\5 leg\propodite5_left_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<RigidBody>
+<Name>Propodite Stretcher</Name>
+<ID>d17e868f-ff9d-474f-a6a3-e2c3249384b6</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0" Green="1" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>091e0ee6-d3ea-4c5f-9fc0-07380c902079</AttachID>
+<AttachID>d24fc282-5b21-44a3-8a2a-b70a1faf318c</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>080ceb4f-ae92-42a1-bb15-df7608afc8e2</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.5" Scale="None" Actual="0.5"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>38b5c3d2-1f9a-4a40-ade1-13d0316a9de5</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="6" Scale="milli" Actual="0.006"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="1.3" Scale="centi" Actual="0.013"/>
+<Lwidth Value="0.7" Scale="centi" Actual="0.007"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.968992" y="-0.217769" z="-0.20228"/>
+<LocalPosition x="-0.139" y="0.986" z="0.19"/>
+<Rotation x="0.277323" y="-0.951696" z="-2.62131"/>
+<LocalRotation x="0.710419" y="-0.0922407" z="0.387341"/>
+<Direction x="-0.13989" y="0.06262" z="0.98819"/>
+<Color Red="0.509804" Green="0.509804" Blue="0.509804" Alpha="1"/>
+<OrientationMatrix>0.9219805,0.3761219,0.0921099,0,-0.3419706,0.6792372,0.649379,0,0.1816812,-0.6302136,0.7548661,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999325,-5.27469E-06,7.748093E-07,0,-5.110829E-06,0.9999663,-5.95086E-06,0,2.891077E-11,-1.029995E-05,0.9999732,0,-0.139,0.986,0.19,0.999926</TranslationMatrix>
+<CombinedTransformationMatrix>-0.5034725,0.2884563,0.8144007,0,-0.6715841,-0.7236958,-0.1588685,0,0.5435513,-0.6269493,0.5581025,0,-2.790193,-1.059111,-3.131163,0.9998817</CombinedTransformationMatrix>
+<CollisionBoxSize x="0.287483" y="0.865951" z="0.344436"/>
+<GraphicsBoxSize x="0.287483" y="0.865951" z="0.344436"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>Crayfish Body Parts\5 leg\carpopodite5_left.obj</MeshFile>
+<CollisionMeshFile>Crayfish Body Parts\5 leg\carpopodite5_left_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<RigidBody>
+<Name>Merus Productor Insertion</Name>
+<ID>52b32678-4b11-41ce-b3e0-c09cabaa4f00</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.0819963" y="-0.629972" z="0.0349984"/>
+<LocalPosition x="0.082" y="-0.63" z="0.035"/>
+<Rotation x="3.02894" y="0.132348" z="1.62444"/>
+<LocalRotation x="-3.0738" y="-1.03386" z="3.02244"/>
+<Direction x="-0.85928" y="0.03465" z="-0.51033"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.5078779,0.06080428,0.8592804,0,0.06080458,0.9975481,-0.03464979,0,-0.8592804,0.03465032,-0.5103299,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.08199999,-0.63,0.035,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.05314896,-0.9898705,-0.1319621,0,-0.9914523,0.0680705,-0.1114358,0,0.1192853,0.1248904,-0.9850125,0,-1.212347,-0.8482488,-2.744189,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Merus Reductor Insertion</Name>
+<ID>81568d46-8801-45c4-9f5d-5e57c873a514</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.0709969" y="-0.708969" z="0.0909959"/>
+<LocalPosition x="-0.071" y="-0.709" z="0.091"/>
+<Rotation x="2.94805" y="-0.130558" z="1.54035"/>
+<LocalRotation x="2.98119" y="-1.27793" z="-2.92606"/>
+<Direction x="-0.95742" y="-0.04611" z="-0.28499"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.2820163,-0.06174264,0.9574208,0,-0.06174234,0.9970265,0.04611003,0,-0.9574208,-0.0461096,-0.2849899,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.071,-0.709,0.09100001,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.0301872,-0.9910642,0.1301871,0,-0.9801263,-0.05493033,-0.1907118,0,0.1961448,-0.1218573,-0.9730169,0,-1.117552,-0.9616659,-2.848777,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Carpus Flexor Origin</Name>
+<ID>d31e3b7e-0a46-4a72-b412-35c43448865d</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.000999988" y="-0.67697" z="0.0559975"/>
+<LocalPosition x="0.001" y="-0.677" z="0.056"/>
+<Rotation x="2.93766" y="-0.204042" z="1.53501"/>
+<LocalRotation x="2.8621" y="-1.34307" z="-2.79124"/>
+<Direction x="-0.97418" y="-0.06228" z="-0.217"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.2120463,-0.07748702,0.9741828,0,-0.07748708,0.9950462,0.06228022,0,-0.9741828,-0.06228027,-0.2170001,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.001,-0.677,0.056,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.03503316,-0.9786621,0.2026291,0,-0.9771988,-0.07606782,-0.1983258,0,0.2094912,-0.1910736,-0.9590046,0,-1.156422,-0.900429,-2.802165,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Carpus Extensor Origin</Name>
+<ID>ef3eddca-be92-4fff-a85e-9dd556597217</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.018999" y="-0.657971" z="0.0179992"/>
+<LocalPosition x="-0.019" y="-0.658" z="0.018"/>
+<Rotation x="2.89678" y="0.0580295" z="1.43691"/>
+<LocalRotation x="2.97513" y="-1.06438" z="-2.86013"/>
+<Direction x="-0.87449" y="-0.08037" z="-0.47834"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.4659575,-0.1347288,0.8744894,0,-0.1347289,0.9876177,0.08036985,0,-0.8744894,-0.08037008,-0.4783398,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.019,-0.658,0.018,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.1332707,-0.9894173,-0.05799696,0,-0.9633915,-0.1156109,-0.2419731,0,0.232695,0.08810401,-0.9685902,0,-1.169737,-0.8733578,-2.838151,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.871654" y="0.0511016" z="-0.14911"/>
+<LocalPosition x="0.098" y="0.875" z="0.097"/>
+<Rotation x="0.371831" y="-1.13527" z="-1.8984"/>
+<LocalRotation x="0.206629" y="-0.830532" z="-0.226317"/>
+<Direction x="0.05957" y="0.97564" z="0.21115"/>
+<Color Red="0.32549" Green="0.32549" Blue="0.32549" Alpha="1"/>
+<OrientationMatrix>0.6572831,-0.1513471,0.7382905,0,0.07200974,0.987758,0.1383784,0,-0.7501956,-0.0377897,0.6601352,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000072,-1.874712E-05,3.248821E-06,0,-9.998917E-06,1.000026,-6.497101E-06,0,-2.503561E-06,-6.49723E-06,1.000062,0,0.098,0.875,0.097,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.1357912,0.3995565,0.9066467,0,-0.9881197,0.01204273,-0.1533174,0,-0.07219108,-0.9166703,0.3931501,0,-1.821201,-0.841342,-2.928884,0.9999557</CombinedTransformationMatrix>
+<CollisionBoxSize x="0.333892" y="1.61944" z="0.356964"/>
+<GraphicsBoxSize x="0.333892" y="1.61944" z="0.356964"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>Crayfish Body Parts\5 leg\meropodite5_left.obj</MeshFile>
+<CollisionMeshFile>Crayfish Body Parts\5 leg\meropodite5_left_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<RigidBody>
+<Name>Merus Reductor Origin</Name>
+<ID>893be375-14f3-4c27-9638-3934e749dc1b</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.100996" y="-0.21899" z="-0.0719967"/>
+<LocalPosition x="-0.101" y="-0.219" z="-0.072"/>
+<Rotation x="2.82153" y="-0.105159" z="1.48689"/>
+<LocalRotation x="3.12092" y="-0.386808" z="-3.03616"/>
+<Direction x="-0.37724" y="-0.01914" z="-0.92592"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.9209749,-0.09746446,0.3772345,0,-0.09746443,0.995055,0.01913981,0,-0.3772345,-0.01913966,-0.92592,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.101,-0.219,-0.072,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.08334553,-0.9909425,0.104965,0,-0.9431018,-0.1124614,-0.3128828,0,0.3218664,-0.07292277,-0.9439474,0,-0.7096744,-0.9632465,-2.807938,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>B-I Promoter Insertion</Name>
+<ID>dc83770e-adfa-4d2c-9777-c3342547efa1</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.0626326" y="-0.206797" z="0.0245793"/>
+<LocalPosition x="0.0626354" y="-0.206806" z="0.0245804"/>
+<Rotation x="2.82125" y="-0.0674458" z="1.48005"/>
+<LocalRotation x="3.12415" y="-0.348977" z="-3.04272"/>
+<Direction x="-0.34193" y="-0.01639" z="-0.93958"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.9351338,-0.09275818,0.3419368,0,-0.09275815,0.9955537,0.01639039,0,-0.3419369,-0.01639022,-0.93958,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.06263541,-0.2068062,0.0245804,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.09041313,-0.993587,0.06739464,0,-0.9432946,-0.1071441,-0.3141652,0,0.3193844,-0.03517592,-0.9469468,0,-0.7661694,-0.8375724,-2.676539,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Merus Productor Origin</Name>
+<ID>e9e12d09-55d5-45f9-9be7-a513899ed9e8</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.0569974" y="-0.22399" z="0.0309986"/>
+<LocalPosition x="0.057" y="-0.224" z="0.031"/>
+<Rotation x="-3.12554" y="0.64819" z="2.16981"/>
+<LocalRotation x="3.06284" y="0.218722" z="2.45259"/>
+<Direction x="0.21696" y="-0.07679" z="-0.97315"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.753489,0.6206232,-0.2169819,0,0.6206233,0.7803389,0.07679769,0,0.2169819,-0.07679781,-0.97315,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.057,-0.224,0.031,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.4494559,-0.6583617,-0.6037446,0,-0.831252,0.5557202,0.01279911,0,0.3271007,0.5076095,-0.7970436,0,-0.751017,-0.8446729,-2.667128,0.9999557</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Merus Productor</Name>
+<ID>f28d05fe-cc25-4896-91bf-b54b5a3d68bb</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0.501961" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>e9e12d09-55d5-45f9-9be7-a513899ed9e8</AttachID>
+<AttachID>52b32678-4b11-41ce-b3e0-c09cabaa4f00</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>1f8eb414-0b6d-40ce-b254-fa4e54e980a0</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.495" Scale="None" Actual="0.495"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>71b61401-021f-4d57-866f-3013cf194b08</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2" Scale="milli" Actual="0.002"/>
+<UpperLimitScale Value="8" Scale="milli" Actual="0.008"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.5" Scale="centi" Actual="0.005"/>
+<Lwidth Value="0.3" Scale="centi" Actual="0.003"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.316617" y="-0.039507" z="-0.0418756"/>
+<LocalPosition x="0.00441724" y="0.319858" z="0.0352264"/>
+<Rotation x="0.322699" y="-0.294137" z="-1.68206"/>
+<LocalRotation x="-0.0578494" y="1.09877" z="0.0915186"/>
+<Direction x="-0.12801" y="0.99083" z="-0.04317"/>
+<Color Red="0.509804" Green="0.509804" Blue="0.509804" Alpha="1"/>
+<OrientationMatrix>0.4527816,0.04155399,-0.8906508,0,-0.1425174,0.9894425,-0.02628854,0,0.8801553,0.1388365,0.4539233,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,-1.758349E-06,4.853817E-12,0,3.308093E-06,1.000014,-3.203784E-06,0,-3.099443E-06,1.780681E-06,1,0,0.004417235,0.3198582,0.03522639,0.999993</TranslationMatrix>
+<CombinedTransformationMatrix>-0.1062594,0.9511032,0.2899143,0,-0.9527218,-0.01392785,-0.3034991,0,-0.2846325,-0.3084496,0.9076276,0,-0.9495462,-0.8924437,-2.779773,0.9999557</CombinedTransformationMatrix>
+<CollisionBoxSize x="0.343373" y="0.550418" z="0.228436"/>
+<GraphicsBoxSize x="0.343373" y="0.550418" z="0.228436"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>Crayfish Body Parts\5 leg\ischiopodite5_left.obj</MeshFile>
+<CollisionMeshFile>Crayfish Body Parts\5 leg\ischiopodite5_left_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<RigidBody>
+<Name>Dep_Insertion</Name>
+<ID>27ad9c79-5e99-4acd-a377-7a2585c3886a</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.0610239" y="-0.160306" z="0.0395168"/>
+<LocalPosition x="-0.060997" y="-0.160304" z="0.0395333"/>
+<Rotation x="1.23963" y="0.415804" z="-0.47531"/>
+<LocalRotation x="-2.85374" y="0.507699" z="-2.12273"/>
+<Direction x="-0.13869" y="-0.93831" z="0.31676"/>
+<Color Red="1" Green="0" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.4581951,-0.7441092,-0.4861675,0,-0.7441093,0.6202851,-0.2480885,0,0.4861674,0.2480887,-0.8379101,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000007,1.847757E-06,4.768463E-07,0,2.414002E-06,1.000007,3.14793E-06,0,-1.244281E-06,2.805207E-06,1.000023,0,-0.06099696,-0.1603042,0.03953327,1.000013</TranslationMatrix>
+<CombinedTransformationMatrix>0.8133795,0.4186176,-0.4039257,0,-0.4884212,0.1142983,-0.8650694,0,-0.3159642,0.9009305,0.2974343,0,-0.4652265,-0.8990474,-2.764904,0.9999757</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>B-I Remoter</Name>
+<ID>915fc6c7-8cd2-4f43-aeaf-c96e576dfc66</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>e8027df2-341d-4d24-8d42-dff7bd1ac24d</AttachID>
+<AttachID>118d3143-8ec7-4f4a-91bd-e5133296399b</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>1a53d96d-5489-4503-8b5c-8086e3f87922</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="0" Scale="milli" Actual="0"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.5" Scale="None" Actual="0.5"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>64bfaeb2-b164-4597-b393-5fdf729ed88a</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="1" Scale="milli" Actual="0.001"/>
+<UpperLimitScale Value="3" Scale="milli" Actual="0.003"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.2" Scale="centi" Actual="0.002"/>
+<Lwidth Value="0.1" Scale="centi" Actual="0.001"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>B-I Promoter</Name>
+<ID>a0be61e4-97d7-4333-b96d-b37242165271</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>c6cadaeb-c4bb-45b6-b2f9-29b1bf8b6d33</AttachID>
+<AttachID>dc83770e-adfa-4d2c-9777-c3342547efa1</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>9fc026e5-4952-4cde-9bea-246915570aea</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="0" Scale="milli" Actual="0"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0.495" Scale="None" Actual="0.495"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="0.5" Scale="None" Actual="0.5"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-5.493" Scale="milli" Actual="-0.005493"/>
+</StimulusTension>
+<LengthTension>
+<ID>10cd6a43-0165-4b2b-afec-e4dfa75c17de</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="1" Scale="milli" Actual="0.001"/>
+<UpperLimitScale Value="3" Scale="milli" Actual="0.003"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.2" Scale="centi" Actual="0.002"/>
+<Lwidth Value="0.1" Scale="centi" Actual="0.001"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="200" Scale="None" Actual="200"/>
+<Kpe Value="20" Scale="None" Actual="20"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>Post_Lev_Insertion</Name>
+<ID>be97510b-4044-4bac-be0f-de441cbf03ae</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.0179758" y="-0.0680073" z="-0.116927"/>
+<LocalPosition x="-0.0179314" y="-0.0679978" z="-0.116909"/>
+<Rotation x="0.474115" y="0.0568077" z="-1.30198"/>
+<LocalRotation x="-1.64351" y="1.29247" z="-1.3631"/>
+<Direction x="0.25003" y="0.09939" z="-0.96312"/>
+<Color Red="0.501961" Green="0.501961" Blue="1" Alpha="1"/>
+<OrientationMatrix>0.05665412,-0.268843,-0.9615164,0,-0.2688299,0.9233865,-0.2740216,0,0.9615201,0.2740088,-0.01995939,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000033,1.788199E-06,1.490147E-07,0,5.960781E-07,1.00002,9.313544E-07,0,1.821047E-13,-7.078269E-07,1.000018,0,-0.01793136,-0.06799784,-0.1169089,1.00002</TranslationMatrix>
+<CombinedTransformationMatrix>0.2651623,0.962517,-0.05677716,0,-0.8646264,0.211296,-0.4558189,0,-0.4267446,0.1699608,0.8882704,0,-0.5618239,-0.7393216,-2.763287,0.9999827</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>B-I Promoter Origin</Name>
+<ID>c6cadaeb-c4bb-45b6-b2f9-29b1bf8b6d33</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.174993" y="-0.0489982" z="-0.0299989"/>
+<LocalPosition x="0.175" y="-0.049" z="-0.03"/>
+<Rotation x="3.10136" y="-0.179778" z="1.73639"/>
+<LocalRotation x="-1.43199" y="-1.41616" z="1.28046"/>
+<Direction x="-0.98807" y="0.15254" z="0.02131"/>
+<Color Red="1" Green="0" Blue="1" Alpha="1"/>
+<OrientationMatrix>0.04409292,0.1475751,0.9880675,0,0.1475747,0.9772171,-0.1525401,0,-0.9880676,0.1525397,0.02131001,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0.175,-0.049,-0.03,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.1621769,-0.970392,0.1788109,0,-0.9866881,0.1576027,-0.03956955,0,0.01021715,-0.1828546,-0.9830645,0,-0.6128011,-0.7942968,-2.56446,0.9999627</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>Ant_Lev_Insertion</Name>
+<ID>cdf21239-78d9-4261-86d8-ca363c95a9b8</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.106877" y="-0.0363085" z="-0.0531808"/>
+<LocalPosition x="0.10696" y="-0.0362887" z="-0.0531424"/>
+<Rotation x="3.12023" y="-0.424406" z="1.83006"/>
+<LocalRotation x="-0.758817" y="-1.21688" z="0.541837"/>
+<Direction x="0.56478" y="0.04476" z="-0.82403"/>
+<Color Red="0" Green="0" Blue="1" Alpha="1"/>
+<OrientationMatrix>0.296933,0.1787329,0.9380221,0,0.1787443,0.9545599,-0.2384659,0,-0.9380199,0.2384744,0.2514928,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000028,6.377862E-06,1.027741E-06,0,-9.268842E-06,1.000035,2.966851E-06,0,-7.818863E-07,1.675495E-06,1.00004,0,0.1069605,-0.03628875,-0.05314244,1.000035</TranslationMatrix>
+<CombinedTransformationMatrix>-0.233628,-0.8808355,0.41178,0,-0.9686266,0.2478053,-0.01946382,0,-0.0849034,-0.4034052,-0.9110824,0,-0.6140632,-0.7826722,-2.63659,0.9999977</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CBCO_Insertion</Name>
+<ID>e0f9fe45-9151-47c2-bc22-93c18e0e9546</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.00189379" y="-0.0380268" z="-0.0990503"/>
+<LocalPosition x="0.002" y="-0.038" z="-0.099"/>
+<Rotation x="1.58283" y="-0.183677" z="-0.207438"/>
+<LocalRotation x="-2.95112" y="0.1804" z="-1.51617"/>
+<Direction x="0.36572" y="0.12478" z="-0.92232"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>0.05371591,-0.9823045,-0.1794229,0,-0.9823045,-0.01969592,-0.1862526,0,0.1794229,0.1862526,-0.96598,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.00005,7.927813E-06,6.780333E-06,0,-1.105712E-05,1.000041,-3.785065E-06,0,3.067382E-11,-7.443529E-06,1.00005,0,0.002,-0.038,-0.099,1.000047</TranslationMatrix>
+<CombinedTransformationMatrix>0.9621202,0.202493,0.182646,0,0.1811935,0.02583736,-0.9831371,0,-0.2037997,0.9789593,-0.01183496,0,-0.5948527,-0.7543169,-2.745929,1.00001</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>B-I Remoter Origin</Name>
+<ID>e8027df2-341d-4d24-8d42-dff7bd1ac24d</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.123995" y="-0.0559979" z="-0.00699978"/>
+<LocalPosition x="-0.124" y="-0.056" z="-0.007"/>
+<Rotation x="-3.12753" y="0.0203476" z="1.75797"/>
+<LocalRotation x="-2.39057" y="-1.31645" z="2.19866"/>
+<Direction x="-0.96783" y="0.1717" z="-0.18393"/>
+<Color Red="1" Green="0" Blue="1" Alpha="1"/>
+<OrientationMatrix>-0.1478046,0.2036285,0.9678271,0,0.2036285,0.9638749,-0.1716992,0,-0.9678271,0.1716993,-0.1839297,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.124,-0.056,-0.007,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.186034,-0.9823005,-0.02034619,0,-0.9824714,0.1857687,0.01405736,0,-0.01002887,0.0226,-0.9996716,0,-0.5574199,-0.8650544,-2.850644,0.9999627</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.17795" y="-0.268937" z="-0.0988979"/>
+<LocalPosition x="-0.0497672" y="0.33136" z="0.0388032"/>
+<Rotation x="0.786856" y="-1.33954" z="-2.36148"/>
+<LocalRotation x="0.0485725" y="-1.03131" z="-0.841153"/>
+<Direction x="0.02266" y="0.598" z="0.80117"/>
+<Color Red="0.509804" Green="0.509804" Blue="0.509804" Alpha="0.101961"/>
+<OrientationMatrix>0.3424281,-0.3829115,0.8579752,0,0.7167633,0.6968691,0.02494146,0,-0.607447,0.6064245,0.5130852,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000012,1.060639E-05,3.907806E-06,0,-1.17483E-06,1.000014,-9.592246E-06,0,4.889493E-06,3.85968E-06,1.000012,0,-0.0497672,0.3313605,0.03880325,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.1628563,0.1611434,0.973379,0,-0.9865833,-0.01708615,-0.1622364,0,-0.009514533,-0.9867501,0.1617641,0,-0.6329293,-0.8529366,-2.737898,0.9999627</CombinedTransformationMatrix>
+<CollisionBoxSize x="0.391628" y="0.2312" z="0.3333"/>
+<GraphicsBoxSize x="0.391628" y="0.2312" z="0.3333"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>Crayfish Body Parts\5 leg\basipodite5_left.obj</MeshFile>
+<CollisionMeshFile>Crayfish Body Parts\5 leg\basipodite5_left_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<RigidBody>
+<Name>CL_Tonic</Name>
+<ID>d7b1e060-c25b-4883-8110-755571fd8312</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.752941" Green="0.752941" Blue="1" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>da92f953-34eb-4cf0-9163-fea1ea61df5e</AttachID>
+<AttachID>be97510b-4044-4bac-be0f-de441cbf03ae</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>30b9d8d7-b734-40d8-95ae-07e3084d56a7</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="1.91" Scale="None" Actual="1.91"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="1.91" Scale="None" Actual="1.91"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-20.985" Scale="milli" Actual="-0.020985"/>
+</StimulusTension>
+<LengthTension>
+<ID>c623c9fd-8dc3-47e6-9cbb-857e423b9d5e</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="1.2" Scale="milli" Actual="0.0012"/>
+<UpperLimitScale Value="4.4" Scale="milli" Actual="0.0044"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.28" Scale="centi" Actual="0.0028"/>
+<Lwidth Value="0.16" Scale="centi" Actual="0.0016"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="39.25" Scale="None" Actual="39.25"/>
+<Kpe Value="3.9" Scale="None" Actual="3.9"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CL_Origin</Name>
+<ID>da92f953-34eb-4cf0-9163-fea1ea61df5e</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.0439984" y="0.00499984" z="-0.169994"/>
+<LocalPosition x="0.044" y="0.005" z="-0.17"/>
+<Rotation x="2.46552" y="-0.00647621" z="-1.66424"/>
+<LocalRotation x="-2.24766" y="0.352397" z="-0.711316"/>
+<Direction x="0.03622" y="0.23643" z="-0.97097"/>
+<Color Red="0.752941" Green="0.752941" Blue="1" Alpha="1"/>
+<OrientationMatrix>0.7109535,-0.6127132,-0.3451487,0,-0.6127133,-0.2988136,-0.7316371,0,0.3451486,0.7316371,-0.5878601,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000032,-5.663959E-06,1.136293E-06,0,-9.101176E-06,1.000032,-7.897877E-06,0,-1.737875E-06,-7.897866E-06,1.000032,0,0.044,0.005,-0.17,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.09330634,0.9956143,0.006476164,0,0.7762395,0.07680637,-0.6257231,0,-0.6234724,-0.05336238,-0.7800194,0,-0.4626823,-0.4964604,-2.791106,0.9999627</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CBCO_origin</Name>
+<ID>e282940d-8354-44ce-b6d1-377e13e411d5</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="0.224999" y="-0.100013" z="-0.137041"/>
+<LocalPosition x="0.225" y="-0.1" z="-0.137"/>
+<Rotation x="1.55418" y="0.599012" z="-1.45303"/>
+<LocalRotation x="-1.3261" y="0.986381" z="-0.794887"/>
+<Direction x="0.95285" y="-0.30292" z="-0.01763"/>
+<Color Red="1" Green="0.647059" Blue="0" Alpha="1"/>
+<OrientationMatrix>0.3863999,-0.3938036,-0.8340347,0,-0.3938035,0.7472601,-0.5352767,0,0.8340347,0.5352767,0.13366,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1.000022,1.831967E-06,5.539597E-06,0,-8.531743E-07,1.000041,-5.275228E-06,0,-4.049459E-06,-8.017035E-06,1.000022,0,0.225,-0.09999999,-0.137,1.000018</TranslationMatrix>
+<CombinedTransformationMatrix>0.09703335,0.8201522,-0.5638266,0,-0.0827492,-0.5579048,-0.8257701,0,-0.9918267,0.1267725,0.01371868,0,-0.5390657,-0.3218082,-2.698788,0.9999807</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CBCO</Name>
+<ID>f209e845-c598-45b3-a963-56b3eb979213</ID>
+<Type>LinearHillStretchReceptor</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillStretchReceptor</PartType>
+<ModuleName/>
+<Color Red="1" Green="1" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>e282940d-8354-44ce-b6d1-377e13e411d5</AttachID>
+<AttachID>e0f9fe45-9151-47c2-bc22-93c18e0e9546</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>3d32c492-6118-4af8-a7a7-b70566c1ed9b</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-100" Scale="milli" Actual="-0.1"/>
+<UpperLimitScale Value="0" Scale="milli" Actual="0"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="6" Scale="None" Actual="6"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="5" Scale="None" Actual="5"/>
+<A3 Value="100" Scale="None" Actual="100"/>
+<A4 Value="0" Scale="None" Actual="0"/>
+</StimulusTension>
+<LengthTension>
+<ID>f2f2f53f-5dd4-453b-8b9b-f9afbed344ef</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="4.059" Scale="milli" Actual="0.004059"/>
+<UpperLimitScale Value="6.5" Scale="milli" Actual="0.0065"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="1" Scale="None" Actual="1"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="6" Scale="milli" Actual="0.006"/>
+<Lwidth Value="10" Scale="centi" Actual="0.1"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="10" Scale="None" Actual="10"/>
+<Kpe Value="1" Scale="None" Actual="1"/>
+<B Value="1" Scale="None" Actual="1"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+<ApplyTension>False</ApplyTension>
+<IaDischarge Value="100" Scale="None" Actual="100"/>
+<IIDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.45498" y="-0.584" z="-2.639"/>
+<LocalPosition x="-0.45498" y="-0.584" z="-2.639"/>
+<Rotation x="0.401112" y="-0.119044" z="-2.43803"/>
+<LocalRotation x="-0.401112" y="-0.119049" z="2.43803"/>
+<Direction x="-0.59018" y="-0.70878" z="-0.38642"/>
+<Color Red="0.509804" Green="0.509804" Blue="0.509804" Alpha="0.101961"/>
+<OrientationMatrix>-0.7571468,0.6423573,0.1187679,0,-0.6309481,-0.6720194,-0.3876784,0,-0.1692137,-0.3684659,0.9141114,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999627,0,0,0,0,0.9999627,0,0,0,0,0.9999627,0,-0.4549797,-0.584,-2.639,0.9999627</TranslationMatrix>
+<CombinedTransformationMatrix>-0.7571185,0.6423333,0.1187635,0,-0.6309246,-0.6719943,-0.387664,0,-0.1692074,-0.3684522,0.9140773,0,-0.4549797,-0.584,-2.639,0.9999627</CombinedTransformationMatrix>
+<CollisionBoxSize x="0.832329" y="0.573344" z="0.464346"/>
+<GraphicsBoxSize x="0.832329" y="0.573344" z="0.464346"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>Crayfish Body Parts\5 leg\coxopodite5_left.obj</MeshFile>
+<CollisionMeshFile>Crayfish Body Parts\5 leg\coxopodite5_left_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<RigidBody>
+<Name>CDc_Origin</Name>
+<ID>1751287a-c7fe-4419-b416-a9fb1ad3a54a</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.309999" y="-0.0729998" z="-2.75999"/>
+<LocalPosition x="-0.309999" y="-0.0729998" z="-2.75999"/>
+<Rotation x="-2.85013" y="-0.155553" z="0.976257"/>
+<LocalRotation x="2.85013" y="-0.155553" z="-0.976257"/>
+<Direction x="0.60929" y="0.15539" z="-0.77758"/>
+<Color Red="1" Green="0.501961" Blue="0.501961" Alpha="1"/>
+<OrientationMatrix>0.5533642,-0.8184044,0.1549264,0,-0.8184044,-0.4996242,0.2838832,0,-0.1549263,-0.2838833,-0.94626,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999985,0,0,0,0,0.9999985,0,0,0,0,0.9999985,0,-0.3099993,-0.07299981,-2.759994,0.9999985</TranslationMatrix>
+<CombinedTransformationMatrix>0.5533633,-0.8184032,0.1549262,0,-0.8184032,-0.4996235,0.2838828,0,-0.1549261,-0.2838829,-0.9462586,0,-0.3099993,-0.07299981,-2.759994,0.9999985</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>RLm Phasic</Name>
+<ID>23ee1704-6002-4e10-a47b-81a6d488e21d</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0" Green="0" Blue="1" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>247d833a-91df-443e-8aa7-81a2b5017c5c</AttachID>
+<AttachID>cdf21239-78d9-4261-86d8-ca363c95a9b8</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>fbd6a59a-76dd-4690-a253-e63dc69d4daa</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="5.73" Scale="None" Actual="5.73"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="5.73" Scale="None" Actual="5.73"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-62.955" Scale="milli" Actual="-0.062955"/>
+</StimulusTension>
+<LengthTension>
+<ID>fb23a685-360f-4734-8ab0-85ed2c09388a</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.5" Scale="milli" Actual="0.0025"/>
+<UpperLimitScale Value="9.5" Scale="milli" Actual="0.0095"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.6" Scale="centi" Actual="0.006"/>
+<Lwidth Value="0.35" Scale="centi" Actual="0.0035"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="488" Scale="None" Actual="488"/>
+<Kpe Value="48" Scale="None" Actual="48"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="91" Scale="None" Actual="91"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>RLm_Origin</Name>
+<ID>247d833a-91df-443e-8aa7-81a2b5017c5c</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.259" y="-0.308" z="-2.474"/>
+<LocalPosition x="-0.259" y="-0.308" z="-2.474"/>
+<Rotation x="3.08746" y="-1.10169" z="-3.05351"/>
+<LocalRotation x="-3.08746" y="-1.10169" z="3.05351"/>
+<Direction x="0.1527" y="-0.9474" z="-0.28128"/>
+<Color Red="0" Green="0" Blue="1" Alpha="1"/>
+<OrientationMatrix>-0.4503395,0.03977186,0.8919712,0,0.03977232,0.9989094,-0.0244598,0,-0.8919712,0.02446055,-0.4514301,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.259,-0.308,-2.474,1</TranslationMatrix>
+<CombinedTransformationMatrix>-0.4503395,0.03977186,0.8919712,0,0.03977232,0.9989094,-0.0244598,0,-0.8919712,0.02446055,-0.4514301,0,-0.259,-0.308,-2.474,1</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CDd_Phasic</Name>
+<ID>30641b72-ea06-429f-9c5c-96fc58fb2506</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>9bc27e52-eaec-43aa-b21d-69fdcaffd92c</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>d9824430-3823-4a36-9fb0-db3e40dfe069</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="6.46" Scale="None" Actual="6.46"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="6.46" Scale="None" Actual="6.46"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-70.976" Scale="milli" Actual="-0.070976"/>
+</StimulusTension>
+<LengthTension>
+<ID>b86d6c10-7352-417f-9b27-82acd106ad7a</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="4" Scale="milli" Actual="0.004"/>
+<UpperLimitScale Value="14" Scale="milli" Actual="0.014"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.9" Scale="centi" Actual="0.009"/>
+<Lwidth Value="0.5" Scale="centi" Actual="0.005"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="663" Scale="None" Actual="663"/>
+<Kpe Value="66.3" Scale="None" Actual="66.3"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>RD_Phasic</Name>
+<ID>3df28b50-0060-4da4-9a37-d2af9326eca0</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0.752941" Blue="0.752941" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>425d87f5-e913-4f57-b631-af74e72b5d51</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>ce12dbb0-3694-4892-842e-a305108315cb</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="6.22" Scale="None" Actual="6.22"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="6.22" Scale="None" Actual="6.22"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-68.339" Scale="milli" Actual="-0.068339"/>
+</StimulusTension>
+<LengthTension>
+<ID>c72b1971-768f-491a-8822-12e97ef55ff7</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.3" Scale="milli" Actual="0.0023"/>
+<UpperLimitScale Value="8.3" Scale="milli" Actual="0.0083"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.53" Scale="centi" Actual="0.0053"/>
+<Lwidth Value="0.3" Scale="centi" Actual="0.003"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="638.4" Scale="None" Actual="638.4"/>
+<Kpe Value="63.8" Scale="None" Actual="63.8"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>RD_Origin</Name>
+<ID>425d87f5-e913-4f57-b631-af74e72b5d51</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.05" y="-0.593" z="-2.4"/>
+<LocalPosition x="-0.05" y="-0.593" z="-2.4"/>
+<Rotation x="-2.23493" y="-0.471292" z="0.915836"/>
+<LocalRotation x="2.23493" y="-0.471292" z="-0.915836"/>
+<Direction x="0.15221" y="-0.89122" z="-0.42728"/>
+<Color Red="1" Green="0.752941" Blue="0.752941" Alpha="1"/>
+<OrientationMatrix>0.542722,-0.7066136,0.4540375,0,-0.7066135,-0.09190202,0.7016062,0,-0.4540375,-0.7016062,-0.54918,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.05,-0.593,-2.4,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.542722,-0.7066136,0.4540375,0,-0.7066135,-0.09190202,0.7016062,0,-0.4540375,-0.7016062,-0.54918,0,-0.05,-0.593,-2.4,1</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>RLr_Origin</Name>
+<ID>430a48a5-5c34-44b1-8458-2e2d9dcead29</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.308" y="-0.474" z="-2.41"/>
+<LocalPosition x="-0.308" y="-0.474" z="-2.41"/>
+<Rotation x="-2.51614" y="-0.436248" z="1.20187"/>
+<LocalRotation x="2.51614" y="-0.436248" z="-1.20187"/>
+<Direction x="0.17784" y="-0.95802" z="-0.22489"/>
+<Color Red="0" Green="0" Blue="0.501961" Alpha="1"/>
+<OrientationMatrix>0.3268411,-0.8453597,0.4225421,0,-0.8453596,-0.06161119,0.5306327,0,-0.4225422,-0.5306327,-0.7347701,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,-0.308,-0.474,-2.41,1</TranslationMatrix>
+<CombinedTransformationMatrix>0.3268411,-0.8453597,0.4225421,0,-0.8453596,-0.06161119,0.5306327,0,-0.4225422,-0.5306327,-0.7347701,0,-0.308,-0.474,-2.41,1</CombinedTransformationMatrix>
+<Radius>0.02</Radius>
+<CollisionRadius>0.02</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>RLr_Phasic</Name>
+<ID>4aa84a92-74cf-4f45-81b5-98ede2cea4f5</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0" Green="0" Blue="0.501961" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>430a48a5-5c34-44b1-8458-2e2d9dcead29</AttachID>
+<AttachID>cdf21239-78d9-4261-86d8-ca363c95a9b8</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>5ba0beb8-c2ff-49c4-8087-76f0c8244d37</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="7.94" Scale="None" Actual="7.94"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="7.94" Scale="None" Actual="7.94"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-87.236" Scale="milli" Actual="-0.087236"/>
+</StimulusTension>
+<LengthTension>
+<ID>74e5d12d-f515-4921-b10c-157fcee435a4</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2" Scale="milli" Actual="0.002"/>
+<UpperLimitScale Value="8" Scale="milli" Actual="0.008"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="5" Scale="milli" Actual="0.005"/>
+<Lwidth Value="3" Scale="milli" Actual="0.003"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="814" Scale="None" Actual="814"/>
+<Kpe Value="81" Scale="None" Actual="81"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="91" Scale="None" Actual="91"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>RD_Tonic</Name>
+<ID>58185988-05fa-4c7c-b7e3-a76c9d5a56af</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="1" Green="0.752941" Blue="0.752941" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>425d87f5-e913-4f57-b631-af74e72b5d51</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>13790e3e-c9a2-4d65-ad4a-d6b9bd4b552e</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="3.61" Scale="None" Actual="3.61"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="3.64" Scale="None" Actual="3.64"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-39.992" Scale="milli" Actual="-0.039992"/>
+</StimulusTension>
+<LengthTension>
+<ID>d4410059-40a8-4cfc-936b-b3cbea65a80f</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.3" Scale="milli" Actual="0.0023"/>
+<UpperLimitScale Value="8.3" Scale="milli" Actual="0.0083"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.53" Scale="centi" Actual="0.0053"/>
+<Lwidth Value="0.3" Scale="centi" Actual="0.003"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="74.76" Scale="None" Actual="74.76"/>
+<Kpe Value="7.5" Scale="None" Actual="7.5"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CDm_Tonic</Name>
+<ID>5c6a61ea-75f5-464a-b513-65bda492d5a1</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.501961" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>7a390fac-bb21-4d30-8137-b0c2c1c81964</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>cd6a80ec-a7ba-4dac-8c77-215dd26fcb3f</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="4.16" Scale="None" Actual="4.16"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="4.19" Scale="None" Actual="4.19"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-46.035" Scale="milli" Actual="-0.046035"/>
+</StimulusTension>
+<LengthTension>
+<ID>3bc6ee35-1ad2-4feb-8f5c-9e6b186e91a4</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.5" Scale="milli" Actual="0.0025"/>
+<UpperLimitScale Value="9.5" Scale="milli" Actual="0.0095"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.6" Scale="centi" Actual="0.006"/>
+<Lwidth Value="0.35" Scale="centi" Actual="0.0035"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="85.93" Scale="None" Actual="85.93"/>
+<Kpe Value="8.6" Scale="None" Actual="8.6"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CDm_Origin</Name>
+<ID>7a390fac-bb21-4d30-8137-b0c2c1c81964</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.15709" y="-0.277287" z="-2.6"/>
+<LocalPosition x="-0.15709" y="-0.277287" z="-2.6"/>
+<Rotation x="3.08746" y="-1.10168" z="-3.05351"/>
+<LocalRotation x="-3.08746" y="-1.10169" z="3.05351"/>
+<Direction x="0.50318" y="-0.76742" z="-0.39733"/>
+<Color Red="0.501961" Green="0" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.4503395,0.03977186,0.8919712,0,0.03977232,0.9989094,-0.0244598,0,-0.8919712,0.02446055,-0.4514301,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999985,0,0,0,0,0.9999985,0,0,0,0,0.9999985,0,-0.15709,-0.2772867,-2.6,0.9999985</TranslationMatrix>
+<CombinedTransformationMatrix>-0.4503388,0.0397718,0.8919699,0,0.03977226,0.9989079,-0.02445976,0,-0.8919699,0.02446052,-0.4514294,0,-0.15709,-0.2772867,-2.6,0.9999985</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>CDd_Origin</Name>
+<ID>9bc27e52-eaec-43aa-b21d-69fdcaffd92c</ID>
+<Type>MuscleAttachment</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.MuscleAttachment</PartType>
+<Description/>
+<IsVisible>True</IsVisible>
+<IsContactSensor>False</IsContactSensor>
+<Cd>1</Cd>
+<Cdr>0.5</Cdr>
+<Ca>1</Ca>
+<Car>1</Car>
+<Texture/>
+<Density Value="1" Scale="None" Actual="1"/>
+<XCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<YCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<ZCenterOfMass Value="0" Scale="centi" Actual="0"/>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0" y="0" z="0"/>
+<RelativePosition x="-0.468296" y="0.114999" z="-2.595"/>
+<LocalPosition x="-0.468296" y="0.114999" z="-2.595"/>
+<Rotation x="-3.13415" y="-1.04403" z="3.12866"/>
+<LocalRotation x="3.13415" y="-1.04405" z="-3.12866"/>
+<Direction x="-0.83483" y="-0.13392" z="-0.53397"/>
+<Color Red="0.752941" Green="0" Blue="0" Alpha="1"/>
+<OrientationMatrix>-0.5026817,-0.006501388,0.8644472,0,-0.006501492,0.9999719,0.003739991,0,-0.8644472,-0.003740171,-0.5027098,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>0.9999906,0,0,0,0,0.9999906,0,0,0,0,0.9999906,0,-0.4682959,0.1149988,-2.595,0.9999906</TranslationMatrix>
+<CombinedTransformationMatrix>-0.502677,-0.006501327,0.864439,0,-0.006501431,0.9999624,0.003739956,0,-0.864439,-0.003740136,-0.5027051,0,-0.4682959,0.1149988,-2.595,0.9999906</CombinedTransformationMatrix>
+<Radius>0.025</Radius>
+<CollisionRadius>0.025</CollisionRadius>
+</RigidBody>
+<RigidBody>
+<Name>RLm Tonic</Name>
+<ID>c832acde-40da-411b-ab7a-557281310be2</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0" Green="0" Blue="0.501961" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>247d833a-91df-443e-8aa7-81a2b5017c5c</AttachID>
+<AttachID>cdf21239-78d9-4261-86d8-ca363c95a9b8</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>8fe3e4cd-1186-416e-9c0f-329801ea08bc</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="4.19" Scale="None" Actual="4.19"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="4.19" Scale="None" Actual="4.19"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-46.035" Scale="milli" Actual="-0.046035"/>
+</StimulusTension>
+<LengthTension>
+<ID>02b8d6dc-9b65-4bd0-a3f2-adcd9d7af3b5</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.5" Scale="milli" Actual="0.0025"/>
+<UpperLimitScale Value="9.5" Scale="milli" Actual="0.0095"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.6" Scale="centi" Actual="0.006"/>
+<Lwidth Value="0.35" Scale="centi" Actual="0.0035"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="86.02" Scale="None" Actual="86.02"/>
+<Kpe Value="8.6" Scale="None" Actual="8.6"/>
+<B Value="50" Scale="None" Actual="50"/>
+<PeLength Value="91" Scale="None" Actual="91"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+<RigidBody>
+<Name>CDm_Phasic</Name>
+<ID>fb05d8b0-87e7-43e1-8ea7-2bf683913321</ID>
+<Type>LinearHillMuscle</Type>
+<PartType>VortexAnimatTools.DataObjects.Physical.RigidBodies.LinearHillMuscle</PartType>
+<ModuleName/>
+<Color Red="0.501961" Green="0" Blue="0" Alpha="1"/>
+<Description/>
+<MuscleAttachments>
+<AttachID>7a390fac-bb21-4d30-8137-b0c2c1c81964</AttachID>
+<AttachID>27ad9c79-5e99-4acd-a377-7a2585c3886a</AttachID>
+</MuscleAttachments>
+<Enabled>True</Enabled>
+<IsVisible>True</IsVisible>
+<MaximumTension Value="100" Scale="None" Actual="100"/>
+<StimulusTension>
+<ID>c7ff62c3-3940-4420-bfd3-df5e955ab425</ID>
+<Type>StimulusTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.StimulusTension</ClassName>
+<UseLimits>False</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="-70" Scale="milli" Actual="-0.07"/>
+<UpperLimitScale Value="20" Scale="milli" Actual="0.02"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="11.66" Scale="None" Actual="11.66"/>
+<IndependentUnits>Membrane Voltage (V)</IndependentUnits>
+<DependentUnits>Contractile Tension (N)</DependentUnits>
+<A1 Value="-40" Scale="milli" Actual="-0.04"/>
+<A2 Value="11.66" Scale="None" Actual="11.66"/>
+<A3 Value="150" Scale="None" Actual="150"/>
+<A4 Value="-12.811" Scale="milli" Actual="-0.012811"/>
+</StimulusTension>
+<LengthTension>
+<ID>10b48f28-25ce-4ae4-9bf6-62c348cab5ae</ID>
+<Type>LengthTension</Type>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.Gains.MuscleGains.LengthTension</ClassName>
+<UseLimits>True</UseLimits>
+<LimitsReadOnly>False</LimitsReadOnly>
+<LimitOutputsReadOnly>False</LimitOutputsReadOnly>
+<UseParentIncomingDataType>True</UseParentIncomingDataType>
+<LowerLimitScale Value="2.5" Scale="milli" Actual="0.0025"/>
+<UpperLimitScale Value="9.5" Scale="milli" Actual="0.0095"/>
+<LowerOutputScale Value="0" Scale="None" Actual="0"/>
+<UpperOutputScale Value="0" Scale="None" Actual="0"/>
+<IndependentUnits>Meters</IndependentUnits>
+<DependentUnits>% Isometric Tension Used</DependentUnits>
+<RestingLength Value="0.6" Scale="centi" Actual="0.006"/>
+<Lwidth Value="0.35" Scale="centi" Actual="0.0035"/>
+<LcePercentage Value="50" Scale="None" Actual="50"/>
+</LengthTension>
+<Kse Value="1196" Scale="None" Actual="1196"/>
+<Kpe Value="120" Scale="None" Actual="120"/>
+<B Value="20" Scale="None" Actual="20"/>
+<PeLength Value="90" Scale="None" Actual="90"/>
+<MinPeLength Value="5" Scale="None" Actual="5"/>
+<IbDischarge Value="100" Scale="None" Actual="100"/>
+</RigidBody>
+</ChildBodies>
+<FoodSource>False</FoodSource>
+<CenterOfMass x="0.00213" y="0" z="0"/>
+<RelativePosition x="0" y="0" z="0"/>
+<LocalPosition x="0" y="0" z="0"/>
+<Rotation x="0" y="0" z="0"/>
+<LocalRotation x="0" y="0" z="0"/>
+<Direction x="0" y="0" z="0"/>
+<Color Red="0.639216" Green="0.639216" Blue="0.639216" Alpha="0.101961"/>
+<OrientationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</OrientationMatrix>
+<TranslationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</TranslationMatrix>
+<CombinedTransformationMatrix>1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1</CombinedTransformationMatrix>
+<CollisionBoxSize x="2.49945" y="2.51516" z="5.77537"/>
+<GraphicsBoxSize x="2.49945" y="2.51516" z="5.77537"/>
+<Scale x="1" y="1" z="1"/>
+<MeshFile>thorax.obj</MeshFile>
+<CollisionMeshFile>thorax_collision.obj</CollisionMeshFile>
+<CollisionMeshType>Convex</CollisionMeshType>
+</RigidBody>
+<CollisionExclusionPairs>
+<CollisionPair>
+<Part1ID>c26fd41b-5c58-441b-bf87-459e4ae481c2</Part1ID>
+<Part2ID>b39ceb7c-84f3-4ff7-871b-ce42e80b527b</Part2ID>
+</CollisionPair>
+<CollisionPair>
+<Part1ID>c26fd41b-5c58-441b-bf87-459e4ae481c2</Part1ID>
+<Part2ID>18b4a900-fb98-41bd-b48b-9bf50e95f7f8</Part2ID>
+</CollisionPair>
+<CollisionPair>
+<Part1ID>017cfb6e-9ba6-4600-ba31-d8344625ec0d</Part1ID>
+<Part2ID>18b4a900-fb98-41bd-b48b-9bf50e95f7f8</Part2ID>
+</CollisionPair>
+</CollisionExclusionPairs>
+</Structure>

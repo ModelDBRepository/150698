@@ -1,0 +1,654 @@
+<Project>
+<ProjectName>Crayfish hybrid simulation model</ProjectName>
+<PhysicsAssemblyName>VortexAnimatTools.dll</PhysicsAssemblyName>
+<PhysicsClassName>VortexAnimatTools.DataObjects.Simulation</PhysicsClassName>
+<SimulationFile>Crayfish hybrid simulation model.asim</SimulationFile>
+<LogLevel>None</LogLevel>
+<SimWindowLocation x="92" y="147"/>
+<SimWindowSize Width="785" Height="708"/>
+<DockingForms>
+<Form>
+<Title>Project Toolbox</Title>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Toolbox</ClassName>
+<TabTitle>Toolbox</TabTitle>
+<BackgroundForm>True</BackgroundForm>
+</Form>
+<Form>
+<Title>Project Workspace</Title>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.ProjectWorkspace</ClassName>
+<TabTitle>Workspace</TabTitle>
+<BackgroundForm>True</BackgroundForm>
+<TreeViewHeight>495</TreeViewHeight>
+</Form>
+<Form>
+<Title>Simulation Controller</Title>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.SimulationController</ClassName>
+<TabTitle>SimulationController</TabTitle>
+<BackgroundForm>True</BackgroundForm>
+<StartingBarTime Value="0" Scale="milli" Actual="0"/>
+<EndingBarTime Value="5000" Scale="milli" Actual="5"/>
+<TimeBarInterval Value="1" Scale="None" Actual="1"/>
+<ActualTimeColor>-5383962</ActualTimeColor>
+<CurrentTimeColor>-16776961</CurrentTimeColor>
+<AutomaticTimeScale>True</AutomaticTimeScale>
+<DivisionMarkFactor>4</DivisionMarkFactor>
+<Divisions>10</Divisions>
+<MajorInterval>10</MajorInterval>
+<MiddleMarkFactor>3</MiddleMarkFactor>
+<TimeScale>MilliSeconds</TimeScale>
+</Form>
+</DockingForms>
+<ChildForms>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Behavior.Editor</ClassName>
+<EditorFile>Crayfish.abef</EditorFile>
+<Form>
+<AssemblyFile>LicensedAnimatTools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Behavior.AddFlowDiagram</ClassName>
+<Title>Edit Crayfish</Title>
+</Form>
+</Child>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.BodyPlan.Editor</ClassName>
+<EditorFile>Crayfish.abpe</EditorFile>
+<Form>
+<AssemblyFile>LicensedAnimatTools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Behavior.AddFlowDiagram</ClassName>
+<Title>Edit Crayfish</Title>
+</Form>
+</Child>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Tools.Viewer</ClassName>
+<EditorFile>Angle and Length.atvf</EditorFile>
+<TreeViewHeight>207</TreeViewHeight>
+<Form>
+<AssemblyFile>licensedanimattools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Charts.LineChart</ClassName>
+<Title>Angle and Length</Title>
+</Form>
+</Child>
+<Child>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.Forms.Tools.Viewer</ClassName>
+<EditorFile>Circuit.atvf</EditorFile>
+<TreeViewHeight>207</TreeViewHeight>
+<Form>
+<AssemblyFile>licensedanimattools.dll</AssemblyFile>
+<ClassName>LicensedAnimatTools.Forms.Charts.LineChart</ClassName>
+<Title>Circuit</Title>
+</Form>
+</Child>
+</ChildForms>
+<ToolViewers>
+<ToolHolder>
+<ID>a4503ce2-30f0-4087-bb2f-4cd41f79c757</ID>
+<Name>Experiment Data</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>633bac9e-e11b-476c-9b3c-8aecaee24a46</ID>
+<Name>Post Lev Set Up</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>a5fb0679-8952-46e9-9cd4-d453a93b0123</ID>
+<Name>ARINs</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>18ce2927-0118-4ebc-a5e0-4c4e53aa0ed0</ID>
+<Name>Open &amp; Closed Loop</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>08465d91-e0cf-428b-acbe-9045f2883a65</ID>
+<Name>Muscle</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>dfd4aa36-9fa2-4684-93ea-f8ec1708f549</ID>
+<Name>Fig 4</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>e0a3022e-c599-4081-97f7-578182e8fa74</ID>
+<Name>Firing Rate Responses</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>7623902a-5894-4e68-9159-a6d9498e7578</ID>
+<Name>Angle and Length</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>b0605c71-b815-415f-90e9-f539e9e50b5a</ID>
+<Name>Depressor Set Up</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>5ab023ac-377a-4162-9158-5b696b4c03f6</ID>
+<Name>Movement</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>306c7247-a960-444f-9400-02971d3b9016</ID>
+<Name>Fig 2</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+<ToolHolder>
+<ID>d00ce99a-07b2-4042-9e98-bfb15ab06fa2</ID>
+<Name>Circuit</Name>
+<BaseAssemblyFile>licensedanimattools.dll</BaseAssemblyFile>
+<BaseClassName>LicensedAnimatTools.Forms.Charts.LineChart</BaseClassName>
+</ToolHolder>
+</ToolViewers>
+<Stimuli>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Phasic Dep 2</Name>
+<ID>1165575b-62af-4ead-b1e6-6abcbfb2358e</ID>
+<StartTime Value="100" Scale="None" Actual="100"/>
+<EndTime Value="110" Scale="None" Actual="110"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>89a8c2a5-7b1e-4313-a136-d67dbcc96272</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Phasic Lev</Name>
+<ID>62869acf-705f-49d3-b4aa-406487dc8c9a</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="40" Scale="None" Actual="40"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>f26f7294-9b2a-42ca-9d45-2c39f9677509</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 5</Name>
+<ID>4ce158b3-d09d-460f-a43c-6605d96a4791</ID>
+<StartTime Value="90" Scale="None" Actual="90"/>
+<EndTime Value="90.5" Scale="None" Actual="90.5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="1" Scale="None" Actual="1"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 3</Name>
+<ID>5232ce17-c5fe-419c-8b4a-979bec2463aa</ID>
+<StartTime Value="70" Scale="None" Actual="70"/>
+<EndTime Value="70.5" Scale="None" Actual="70.5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="1" Scale="None" Actual="1"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.MotorVelocity</ClassName>
+<Name>Leg Extended 2</Name>
+<ID>0e640174-2a25-43cc-a4c2-cff5edeed1c3</ID>
+<StartTime Value="100" Scale="None" Actual="100"/>
+<EndTime Value="110" Scale="None" Actual="110"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>74c44547-5eec-4102-960f-96fcb71f2f65</PartID>
+<Velocity Value="0" Scale="centi" Actual="0"/>
+<DisableMotorWhenDone>True</DisableMotorWhenDone>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Tonic Lev 2</Name>
+<ID>1982b26d-29e4-49f1-9a9b-ba3484473d25</ID>
+<StartTime Value="100" Scale="None" Actual="100"/>
+<EndTime Value="110" Scale="None" Actual="110"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>dfb259e3-aa50-4b0d-aac3-3e3f2b046f0e</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 2</Name>
+<ID>a4c2ff6f-be70-4ddf-9bf3-825b008d6a7b</ID>
+<StartTime Value="60" Scale="None" Actual="60"/>
+<EndTime Value="60.5" Scale="None" Actual="60.5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="1" Scale="None" Actual="1"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.MotorVelocity</ClassName>
+<Name>Leg Extended 1</Name>
+<ID>01c7844d-b9fa-4224-8d8b-cf9016fea99c</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="40" Scale="None" Actual="40"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>74c44547-5eec-4102-960f-96fcb71f2f65</PartID>
+<Velocity Value="0" Scale="centi" Actual="0"/>
+<DisableMotorWhenDone>True</DisableMotorWhenDone>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.TonicCurrent</ClassName>
+<Name>Command</Name>
+<ID>86d09bb5-960d-45b4-8adb-792650c290b2</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="115" Scale="None" Actual="115"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation>.75*t</Equation>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>50263681-792b-4043-b59a-dbe84c784cda</NodeID>
+<CurrentOn Value="0" Scale="nano" Actual="0"/>
+<CurrentOff Value="0" Scale="nano" Actual="0"/>
+<CurrentBurstOff Value="0" Scale="nano" Actual="0"/>
+<CycleOnDuration Value="0.115" Scale="Kilo" Actual="115"/>
+<CycleOffDuration Value="0" Scale="None" Actual="0"/>
+<BurstOnDuration Value="0.115" Scale="Kilo" Actual="115"/>
+<BurstOffDuration Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Tonic Lev</Name>
+<ID>3013e70b-6c67-4e74-8164-9fb58e40514d</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="40" Scale="None" Actual="40"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>dfb259e3-aa50-4b0d-aac3-3e3f2b046f0e</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Tonic Dep 2</Name>
+<ID>6452a821-bba5-4b9b-9582-57dd6fc6661a</ID>
+<StartTime Value="100" Scale="None" Actual="100"/>
+<EndTime Value="110" Scale="None" Actual="110"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>9bd028e3-92dd-4005-8d4f-5624229f322f</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Phasic Dep</Name>
+<ID>082a2d48-12b0-44a2-b1ee-8d6005d63a7e</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="40" Scale="None" Actual="40"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>89a8c2a5-7b1e-4313-a136-d67dbcc96272</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 4</Name>
+<ID>96f35352-12d8-49c5-b3fd-ff4f6b5de080</ID>
+<StartTime Value="80" Scale="None" Actual="80"/>
+<EndTime Value="80.5" Scale="None" Actual="80.5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="1" Scale="None" Actual="1"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Tonic Dep</Name>
+<ID>f9c7af7a-414d-4dd6-bd05-de064c3f805c</ID>
+<StartTime Value="0" Scale="None" Actual="0"/>
+<EndTime Value="40" Scale="None" Actual="40"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>9bd028e3-92dd-4005-8d4f-5624229f322f</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.VoltageClamp</ClassName>
+<Name>Phasic Lev 2</Name>
+<ID>cc5452cf-4cc3-4f20-85fa-8f637c480b19</ID>
+<StartTime Value="100" Scale="None" Actual="100"/>
+<EndTime Value="110" Scale="None" Actual="110"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<OrganismID>788969bd-7025-4b3f-b173-723fb1588ff8</OrganismID>
+<NodeID>f26f7294-9b2a-42ca-9d45-2c39f9677509</NodeID>
+<Vtarget Value="-70" Scale="milli" Actual="-0.07"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.Force</ClassName>
+<Name>Merus Stim 1</Name>
+<ID>377bb6f5-1a8f-49b5-abcb-33c122b858b8</ID>
+<StartTime Value="50" Scale="None" Actual="50"/>
+<EndTime Value="50.5" Scale="None" Actual="50.5"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>True</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>4690cdd5-b5b2-4067-8e04-906f5ca847f8</PartID>
+<PositionX Value="0" Scale="centi" Actual="0"/>
+<PositionY Value="0.8" Scale="centi" Actual="0.008"/>
+<PositionZ Value="0" Scale="centi" Actual="0"/>
+<ForceX Value="0" Scale="None" Actual="0"/>
+<ForceY Value="1" Scale="None" Actual="1"/>
+<ForceZ Value="0" Scale="None" Actual="0"/>
+<TorqueX Value="0" Scale="None" Actual="0"/>
+<TorqueY Value="0" Scale="None" Actual="0"/>
+<TorqueZ Value="0" Scale="None" Actual="0"/>
+</Stimulus>
+<Stimulus>
+<AssemblyFile>animattools.dll</AssemblyFile>
+<ClassName>AnimatTools.DataObjects.ExternalStimuli.MotorVelocity</ClassName>
+<Name>Leg Extended 3</Name>
+<ID>a7c645c6-3452-4d8b-a910-8926f5f0cd50</ID>
+<StartTime Value="270" Scale="None" Actual="270"/>
+<EndTime Value="280" Scale="None" Actual="280"/>
+<StepInterval Value="0" Scale="milli" Actual="0"/>
+<AlwaysActive>False</AlwaysActive>
+<Enabled>False</Enabled>
+<ValueType>Constant</ValueType>
+<Equation/>
+<StructureID>788969bd-7025-4b3f-b173-723fb1588ff8</StructureID>
+<PartID>74c44547-5eec-4102-960f-96fcb71f2f65</PartID>
+<Velocity Value="0" Scale="centi" Actual="0"/>
+<DisableMotorWhenDone>False</DisableMotorWhenDone>
+</Stimulus>
+</Stimuli>
+<DockingConfig FormatVersion="5" InsideFill="False" InnerMinimum="20, 20">
+  <Content Name="Simulation Controller" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="150, 102" DisplayLocation="409, 856" AutoHideSize="150, 102" FloatingSize="150, 150" FullTitle="Simulation Controller">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Simulation Controller" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Simulation Controller" />
+      <State Value="DockBottom" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Simulation Controller" />
+      <State Value="DockBottom" />
+      <Position Size="1288, 113" Location="409, 856" />
+      <Best Count="1">
+        <Item Name="Simulation Controller" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Simulation Controller" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Simulation Controller" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Simulation Controller" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentFloatingAffinity">
+      <Content Name="Simulation Controller" />
+      <State Value="Floating" />
+      <Position Size="150, 168" Location="409, 856" />
+      <Best Count="0" />
+      <Associates Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Simulation Controller" />
+        <Space Value="100" />
+        <Best Count="0" />
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Simulation Controller" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </FloatingRestore>
+  </Content>
+  <Content Name="Project Workspace" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="356, 150" DisplayLocation="150, 150" AutoHideSize="356, 150" FloatingSize="150, 150" FullTitle="Project Workspace">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Workspace" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Project Workspace" />
+      <State Value="DockLeft" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Project Toolbox" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Project Workspace" />
+      <State Value="DockLeft" />
+      <Position Size="415, 150" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Project Workspace" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Project Workspace" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Project Workspace" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Project Workspace" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Workspace" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Project Toolbox" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="196, 150" DisplayLocation="150, 150" AutoHideSize="196, 150" FloatingSize="150, 150" FullTitle="Project Toolbox">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Toolbox" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Project Toolbox" />
+      <State Value="DockLeft" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="1">
+        <Item Name="Project Workspace" />
+      </PreviousAll>
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Project Toolbox" />
+      <State Value="DockLeft" />
+      <Position Size="150, 150" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Project Toolbox" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Project Toolbox" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Project Toolbox" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Project Toolbox" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Project Toolbox" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+</DockingConfig>
+</Project>
